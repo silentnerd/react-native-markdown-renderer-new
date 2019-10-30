@@ -1,6 +1,6 @@
 /**
  * Base Markdown component
- * @author Mient-jan Stelling
+ * @author Sujeban Elankeswaran
  */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
@@ -41,6 +41,11 @@ export {
  * react-native-markdown-renderer
  */
 export default class Markdown extends Component {
+
+  constructor(props) {
+    super(props);
+    this.updateSettings();
+}
   /**
    * Definition of the prop types
    */
@@ -123,8 +128,8 @@ export default class Markdown extends Component {
    *
    * @param props
    */
-  updateSettings(props = this.props) {
-    const { renderer, rules, style, plugins, markdownit } = props;
+  updateSettings = () => {
+    const { renderer, rules, style, plugins, markdownit } = this.props;
 
     if (renderer && rules) {
       console.warn(
@@ -182,17 +187,12 @@ export default class Markdown extends Component {
 
   /**
    *
-   */
-  componentWillMount() {
-    this.updateSettings(this.props);
-  }
-
-  /**
-   *
    * @param nextProps
    */
-  componentWillReceiveProps(nextProps) {
-    this.updateSettings(nextProps);
+  componentDidUpdate(prevProps, nextProps) {
+    if(nextProps != prevProps){
+      this.updateSettings(nextProps);
+    }
   }
 
   /**
