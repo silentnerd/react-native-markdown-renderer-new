@@ -1,13 +1,13 @@
 {
-  "name": "react-native-markdown-renderer",
-  "version": "3.2.8",
+  "name": "react-native-markdown-renderer-new",
+  "version": "0.1.0",
   "description": "Markdown renderer for react-native, with CommonMark spec support + adds syntax extensions & sugar (URL autolinking, typographer).",
   "main": "src/index.js",
   "types": "src/index.d.ts",
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mientjan/react-native-markdown-renderer.git"
+    "url": "git+https://github.com/silentnerd/react-native-markdown-renderer-new.git"
   },
   "keywords": [
     "react",
@@ -17,12 +17,12 @@
     "commonmark",
     "markdown-it"
   ],
-  "author": "Mient-jan Stelling",
+  "author": "Sujeban Elankeswaran",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mientjan/react-native-markdown-renderer/issues"
+    "url": "https://github.com/silentnerd/react-native-markdown-renderer-new.git/issues"
   },
-  "homepage": "https://github.com/mientjan/react-native-markdown-renderer#readme",
+  "homepage": "https://github.com/silentnerd/react-native-markdown-renderer-new.git#readme",
   "dependencies": {
     "@types/markdown-it": "^0.0.4",
     "@types/react-native": ">=0.50.0",
